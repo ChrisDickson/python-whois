@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        Please enter IP address or domain name:
+        <form method="POST">
+            <input name="domain">
+            <input type="submit">
+        </form>
+        {% if whois_info %}
+            {{ whois_info }}
+        {% else %}
+            Whois data will be shown here!
+        {% endif %}
+    </body>
+</html>
